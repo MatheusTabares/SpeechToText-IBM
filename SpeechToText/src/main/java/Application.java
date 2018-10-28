@@ -33,9 +33,9 @@ public class Application {
 	public static String VERSION_ASSISTENT = "2018-02-16";
 	public static String USER_WATSON_SPEECH_TO_TEXT = "8ef046d2-0b24-45c1-b12d-8b9e37cf535a";
 	public static String PASSWORD_WATSON_SPEECH_TO_TEXT = "w0jWHgRbtg46";
-	public static String USER_WATSON_ASSISTENT = "f17196fb-ad7f-4efe-b9bd-d7468f0a55b4";
-	public static String PASSWORD_WATSON_ASSISTENT = "fVChilOOMMNx";
-	public static String WORKSPACE_ID_WATSON_ASSISTENT = "f4067fdf-826c-4d91-ab91-b095f2cbb6ea";
+	public static String USER_WATSON_ASSISTANT = "f17196fb-ad7f-4efe-b9bd-d7468f0a55b4";
+	public static String PASSWORD_WATSON_ASSISTANT = "fVChilOOMMNx";
+	public static String WORKSPACE_ID_WATSON_ASSISTANT = "f4067fdf-826c-4d91-ab91-b095f2cbb6ea";
 	public static String USER_WATSON_TEXT_TO_SPEECH = "eb657d72-4c20-4d27-b0b2-03bd2711f365";
 	public static String PASSWORD_WATSON_TEXT_TO_SPEECH = "60A18b20tDmz";
 	public static String LANGUAGE = "pt-BR_BroadbandModel";
@@ -73,10 +73,10 @@ public class Application {
             		final String result = speechResults.getResults().get(0).getAlternatives().get(0).getTranscript().trim();
 	
 	            	Assistant serviceA = new Assistant(VERSION_ASSISTENT);
-	            	serviceA.setUsernameAndPassword(USER_WATSON_ASSISTENT, PASSWORD_WATSON_ASSISTENT);
+	            	serviceA.setUsernameAndPassword(USER_WATSON_ASSISTANT, PASSWORD_WATSON_ASSISTANT);
 	
 	            	InputData input = new InputData.Builder(result).build();
-	            	MessageOptions option = new MessageOptions.Builder(WORKSPACE_ID_WATSON_ASSISTENT)
+	            	MessageOptions option = new MessageOptions.Builder(WORKSPACE_ID_WATSON_ASSISTANT)
 	            	  .input(input)
 	            	  .build();
 	            	MessageResponse response = serviceA.message(option).execute();
