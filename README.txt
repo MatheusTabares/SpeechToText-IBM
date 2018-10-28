@@ -5,12 +5,12 @@ TECNOLOGIAS
 Maven, Java 8, API Speech To Text IBM, API Text To Speech IBM, API Watson Assistant.
 
 =========PRÉ REQUISITOS
-	Eclipse IDE
-	JDK 8
+	Eclipse IDE: https://www.eclipse.org/downloads/packages/release/neon/3/eclipse-ide-java-ee-developers
+	JDK 8: https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 =======================
 
 SCRIPT DE EXECUÇÃO
-Import o código fonte como 'Existing Project Maven' na workspace do Eclipse IDE
+Importar o código fonte como 'Existing Project Maven' na workspace do Eclipse IDE
 Clique com o botão direito do mouse sobre o projeto e clique na opção 'Run As' e 'Maven Install' para realizar a construção do projeto.
 Clique com o botão direito do mouse sobre o projeto e clique na opçao 'Run As' e 'Java application' para executar o projeto.
 
