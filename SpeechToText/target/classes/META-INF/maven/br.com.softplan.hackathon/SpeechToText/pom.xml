@@ -17,6 +17,12 @@
 	  <artifactId>text-to-speech</artifactId>
 	  <version>6.8.0</version>
 	</dependency>
+	
+	<dependency>
+	  <groupId>com.ibm.watson.developer_cloud</groupId>
+	  <artifactId>assistant</artifactId>
+	  <version>6.8.0</version>
+	</dependency>
   </dependencies>
  
 
