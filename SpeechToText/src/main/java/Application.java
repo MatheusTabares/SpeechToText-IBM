@@ -51,7 +51,7 @@ public class Application {
         DataLine.Info info = new DataLine.Info(TargetDataLine.class, format);
         
         if (!AudioSystem.isLineSupported(info)) {
-            System.out.println("Line not supported");
+            System.out.println("Certifique-se que seu microfone está habilitado.");
             System.exit(0);
         }
         
